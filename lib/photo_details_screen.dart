@@ -21,6 +21,7 @@ class PhotoDetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
         title: const Text('Photo Details'),
       ),
       body: Padding(
@@ -34,7 +35,9 @@ class PhotoDetailsScreen extends StatelessWidget {
             const SizedBox(height: 20),
             buildText('Title', title),
             const SizedBox(height: 15),
-            buildText('Id', id),
+            Center(
+                child: buildText('Id', id)
+            ),
           ],
         ),
       ),

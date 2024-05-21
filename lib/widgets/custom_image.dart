@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 Widget buildImage(String imgUrl) {
   return Image.network(
     imgUrl,
+    height: 200,
+    width: 350,
     loadingBuilder:
         (BuildContext context, Widget child, ImageChunkEvent? loadingProgress) {
       if (loadingProgress == null) {
